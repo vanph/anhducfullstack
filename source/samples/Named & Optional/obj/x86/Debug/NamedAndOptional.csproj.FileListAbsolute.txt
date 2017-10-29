@@ -1,0 +1,6 @@
+D:\training\students\luong\Tutorial\Tutorial\samples\Named & Optional\bin\Debug\NamedAndOptional.exe
+D:\training\students\luong\Tutorial\Tutorial\samples\Named & Optional\bin\Debug\NamedAndOptional.pdb
+D:\training\students\luong\Tutorial\Tutorial\samples\Named & Optional\obj\x86\Debug\NamedAndOptional.csprojResolveAssemblyReference.cache
+D:\training\students\luong\Tutorial\Tutorial\samples\Named & Optional\obj\x86\Debug\NamedAndOptional.csproj.CoreCompileInputs.cache
+D:\training\students\luong\Tutorial\Tutorial\samples\Named & Optional\obj\x86\Debug\NamedAndOptional.exe
+D:\training\students\luong\Tutorial\Tutorial\samples\Named & Optional\obj\x86\Debug\NamedAndOptional.pdb

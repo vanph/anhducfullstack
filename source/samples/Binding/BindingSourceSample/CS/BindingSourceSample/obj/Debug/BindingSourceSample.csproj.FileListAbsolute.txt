@@ -1,0 +1,9 @@
+D:\training\sample\Technologies\WinForms\BindingSourceSample\CS\BindingSourceSample\bin\Debug\BindingSourceSample.exe
+D:\training\sample\Technologies\WinForms\BindingSourceSample\CS\BindingSourceSample\bin\Debug\BindingSourceSample.pdb
+D:\training\sample\Technologies\WinForms\BindingSourceSample\CS\BindingSourceSample\obj\Debug\BindingSourceSample.csprojResolveAssemblyReference.cache
+D:\training\sample\Technologies\WinForms\BindingSourceSample\CS\BindingSourceSample\obj\Debug\Microsoft.Samples.Windows.Forms.BindingSourceSample.Configuration.Resources.resources
+D:\training\sample\Technologies\WinForms\BindingSourceSample\CS\BindingSourceSample\obj\Debug\Microsoft.Samples.Windows.Forms.BindingSourceSample.MainForm.resources
+D:\training\sample\Technologies\WinForms\BindingSourceSample\CS\BindingSourceSample\obj\Debug\BindingSourceSample.csproj.GenerateResource.Cache
+D:\training\sample\Technologies\WinForms\BindingSourceSample\CS\BindingSourceSample\obj\Debug\BindingSourceSample.csproj.CoreCompileInputs.cache
+D:\training\sample\Technologies\WinForms\BindingSourceSample\CS\BindingSourceSample\obj\Debug\BindingSourceSample.exe
+D:\training\sample\Technologies\WinForms\BindingSourceSample\CS\BindingSourceSample\obj\Debug\BindingSourceSample.pdb

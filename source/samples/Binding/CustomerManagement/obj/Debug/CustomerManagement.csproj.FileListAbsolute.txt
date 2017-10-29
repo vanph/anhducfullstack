@@ -1,0 +1,15 @@
+D:\training\sample\my sample\CustomerManagementBefore\obj\Debug\CustomerManagement.Forms.CustomerDetailForm.resources
+D:\training\sample\my sample\CustomerManagementBefore\obj\Debug\CustomerManagement.Forms.CustomerListForm.resources
+D:\training\sample\my sample\CustomerManagementBefore\obj\Debug\CustomerManagement.Properties.Resources.resources
+D:\training\sample\my sample\CustomerManagementBefore\obj\Debug\CustomerManagement.csproj.GenerateResource.Cache
+D:\training\sample\my sample\CustomerManagementBefore\obj\Debug\CustomerManagement.csproj.CoreCompileInputs.cache
+D:\training\sample\my sample\CustomerManagementBefore\bin\Debug\CustomerManagement.exe.config
+D:\training\sample\my sample\CustomerManagementBefore\bin\Debug\CustomerManagement.exe
+D:\training\sample\my sample\CustomerManagementBefore\bin\Debug\CustomerManagement.pdb
+D:\training\sample\my sample\CustomerManagementBefore\bin\Debug\EntityFramework.dll
+D:\training\sample\my sample\CustomerManagementBefore\bin\Debug\EntityFramework.SqlServer.dll
+D:\training\sample\my sample\CustomerManagementBefore\bin\Debug\EntityFramework.xml
+D:\training\sample\my sample\CustomerManagementBefore\bin\Debug\EntityFramework.SqlServer.xml
+D:\training\sample\my sample\CustomerManagementBefore\obj\Debug\CustomerManagement.csprojResolveAssemblyReference.cache
+D:\training\sample\my sample\CustomerManagementBefore\obj\Debug\CustomerManagement.exe
+D:\training\sample\my sample\CustomerManagementBefore\obj\Debug\CustomerManagement.pdb

@@ -1,0 +1,5 @@
+D:\training\students\luong\Tutorial\Tutorial\samples\Yield Sample\bin\Debug\Yield.exe
+D:\training\students\luong\Tutorial\Tutorial\samples\Yield Sample\bin\Debug\Yield.pdb
+D:\training\students\luong\Tutorial\Tutorial\samples\Yield Sample\obj\Debug\Yield.csproj.CoreCompileInputs.cache
+D:\training\students\luong\Tutorial\Tutorial\samples\Yield Sample\obj\Debug\Yield.exe
+D:\training\students\luong\Tutorial\Tutorial\samples\Yield Sample\obj\Debug\Yield.pdb

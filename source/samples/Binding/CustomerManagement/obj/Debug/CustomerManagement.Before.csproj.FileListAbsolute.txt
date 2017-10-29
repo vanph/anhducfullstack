@@ -1,0 +1,6 @@
+D:\training\sample\my sample\CustomerManagementBefore\obj\Debug\CustomerManagement.Before.csprojResolveAssemblyReference.cache
+D:\training\sample\my sample\CustomerManagementBefore\obj\Debug\CustomerManagement.Forms.CustomerDetailForm.resources
+D:\training\sample\my sample\CustomerManagementBefore\obj\Debug\CustomerManagement.Forms.CustomerListForm.resources
+D:\training\sample\my sample\CustomerManagementBefore\obj\Debug\CustomerManagement.Properties.Resources.resources
+D:\training\sample\my sample\CustomerManagementBefore\obj\Debug\CustomerManagement.Before.csproj.GenerateResource.Cache
+D:\training\sample\my sample\CustomerManagementBefore\obj\Debug\CustomerManagement.Before.csproj.CoreCompileInputs.cache

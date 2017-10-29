@@ -1,0 +1,7 @@
+D:\training\sample\Technologies\WinForms\BindingNavigatorSample\CS\BindingNavigatorSample\bin\Debug\BindingNavigatorSample.exe
+D:\training\sample\Technologies\WinForms\BindingNavigatorSample\CS\BindingNavigatorSample\bin\Debug\BindingNavigatorSample.pdb
+D:\training\sample\Technologies\WinForms\BindingNavigatorSample\CS\BindingNavigatorSample\obj\Debug\Microsoft.Samples.Windows.Forms.BindingNavigatorSample.BindingNavigatorSample.resources
+D:\training\sample\Technologies\WinForms\BindingNavigatorSample\CS\BindingNavigatorSample\obj\Debug\BindingNavigatorSample.csproj.GenerateResource.Cache
+D:\training\sample\Technologies\WinForms\BindingNavigatorSample\CS\BindingNavigatorSample\obj\Debug\BindingNavigatorSample.csproj.CoreCompileInputs.cache
+D:\training\sample\Technologies\WinForms\BindingNavigatorSample\CS\BindingNavigatorSample\obj\Debug\BindingNavigatorSample.exe
+D:\training\sample\Technologies\WinForms\BindingNavigatorSample\CS\BindingNavigatorSample\obj\Debug\BindingNavigatorSample.pdb

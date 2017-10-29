@@ -1,0 +1,6 @@
+D:\training\students\luong\Tutorial\Tutorial\DelelageEventSample\Delegates1\bin\Debug\Delegates1.exe
+D:\training\students\luong\Tutorial\Tutorial\DelelageEventSample\Delegates1\bin\Debug\Delegates1.pdb
+D:\training\students\luong\Tutorial\Tutorial\DelelageEventSample\Delegates1\obj\Debug\Delegates1.csproj.CoreCompileInputs.cache
+D:\training\students\luong\Tutorial\Tutorial\DelelageEventSample\Delegates1\obj\Debug\Delegates1.exe
+D:\training\students\luong\Tutorial\Tutorial\DelelageEventSample\Delegates1\obj\Debug\Delegates1.pdb
+D:\training\students\luong\Tutorial\Tutorial\DelelageEventSample\Delegates1\obj\Debug\Delegates1.csprojResolveAssemblyReference.cache

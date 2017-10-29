@@ -1,0 +1,14 @@
+D:\training\students\minh\BasicCsharpWPF\sourcecode\SimpleForm\bin\Debug\SimpleForm.exe.config
+D:\training\students\minh\BasicCsharpWPF\sourcecode\SimpleForm\bin\Debug\SimpleForm.exe
+D:\training\students\minh\BasicCsharpWPF\sourcecode\SimpleForm\bin\Debug\SimpleForm.pdb
+D:\training\students\minh\BasicCsharpWPF\sourcecode\SimpleForm\obj\Debug\SimpleForm.csprojResolveAssemblyReference.cache
+D:\training\students\minh\BasicCsharpWPF\sourcecode\SimpleForm\obj\Debug\MainWindow.baml
+D:\training\students\minh\BasicCsharpWPF\sourcecode\SimpleForm\obj\Debug\MainWindow.g.cs
+D:\training\students\minh\BasicCsharpWPF\sourcecode\SimpleForm\obj\Debug\App.g.cs
+D:\training\students\minh\BasicCsharpWPF\sourcecode\SimpleForm\obj\Debug\SimpleForm_MarkupCompile.cache
+D:\training\students\minh\BasicCsharpWPF\sourcecode\SimpleForm\obj\Debug\SimpleForm.g.resources
+D:\training\students\minh\BasicCsharpWPF\sourcecode\SimpleForm\obj\Debug\SimpleForm.Properties.Resources.resources
+D:\training\students\minh\BasicCsharpWPF\sourcecode\SimpleForm\obj\Debug\SimpleForm.csproj.GenerateResource.Cache
+D:\training\students\minh\BasicCsharpWPF\sourcecode\SimpleForm\obj\Debug\SimpleForm.csproj.CoreCompileInputs.cache
+D:\training\students\minh\BasicCsharpWPF\sourcecode\SimpleForm\obj\Debug\SimpleForm.exe
+D:\training\students\minh\BasicCsharpWPF\sourcecode\SimpleForm\obj\Debug\SimpleForm.pdb
