@@ -1,2 +1,2 @@
-# anhducfullstack
-Full Stack Dev
+# Ngô Anh Đức
+Become a Full-stack .NET developer
