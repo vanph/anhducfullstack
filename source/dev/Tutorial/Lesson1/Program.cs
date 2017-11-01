@@ -11,7 +11,7 @@ namespace Lesson1
     {
         static void Main(string[] args)
         {
-            var message = "Hello world 2222";
+            var message = "Hello world Duc";
 
             Console.WriteLine(message);
 
