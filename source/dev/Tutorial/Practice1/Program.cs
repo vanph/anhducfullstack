@@ -11,18 +11,28 @@ namespace Practice1
         static void Main(string[] args)
         {
             Console.WriteLine("Multiples of 3 & 5 below 1000:");
-            int total = 0;
-            for (int i = 1; i < 1000; i++)
-            {
-                if (i % 3 == 0 || i % 5 == 0)
-                {
-                    Console.WriteLine(i);
-                    total = total + i;
-                }
-            }
+
+            var total = MultipleOf3And5(1000);
+
             Console.Write("Sum of all multiples 3 & 5 below 100 is :" + total);
 
             Console.ReadLine();
+        }
+
+       
+        private static int MultipleOf3And5(int number)
+        {
+            int total = 0;
+
+            for (int i = 1; i < number; i++)
+            {
+                if (i % 3 == 0 || i % 5 == 0)
+                {
+                    total = total + i;
+                }
+            }
+
+            return total;
         }
     }
 }
