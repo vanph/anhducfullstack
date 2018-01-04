@@ -1,9 +1,6 @@
-﻿using Lesson2.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Lesson2.Models;
 
 namespace Lesson2
 {
@@ -11,7 +8,7 @@ namespace Lesson2
     {
         static void Main(string[] args)
         {
-            var Employee1 = new ListEmployee
+            var employee1 = new Employee
             {
                 EmployeeId = 1,
                 LastName = "Davolio",
@@ -27,7 +24,7 @@ namespace Lesson2
                 HomePhone = "(206) 555-9857"
             };
 
-            var Employee2 = new ListEmployee
+            var employee2 = new Employee
             {
                 EmployeeId = 2,
                 LastName = "Fuller",
@@ -43,7 +40,7 @@ namespace Lesson2
                 HomePhone = "(206) 555-9482"
             };
 
-            var Employee3 = new ListEmployee
+            var employee3 = new Employee
             {
                 EmployeeId = 3,
                 LastName = "Leverling",
@@ -59,7 +56,7 @@ namespace Lesson2
                 HomePhone = "(206) 555-3412"
             };
 
-            var Employee4 = new ListEmployee
+            var employee4 = new Employee
             {
                 EmployeeId = 4,
                 LastName = "Peacock",
@@ -75,7 +72,7 @@ namespace Lesson2
                 HomePhone = "(206) 555-8122"
             };
 
-            var Employee5 = new ListEmployee
+            var employee5 = new Employee
             {
                 EmployeeId = 5,
                 LastName = "Buchanan",
@@ -91,7 +88,7 @@ namespace Lesson2
                 HomePhone = "(71) 555-4848"
             };
 
-            var Employee6 = new ListEmployee
+            var employee6 = new Employee
             {
                 EmployeeId = 6,
                 LastName = "Suyama",
@@ -107,7 +104,7 @@ namespace Lesson2
                 HomePhone = "(71) 555-7773"
             };
 
-            var Employee7 = new ListEmployee
+            var employee7 = new Employee
             {
                 EmployeeId = 7,
                 LastName = "King",
@@ -123,7 +120,7 @@ namespace Lesson2
                 HomePhone = "(71) 555-5598"
             };
 
-            var Employee8 = new ListEmployee
+            var employee8 = new Employee
             {
                 EmployeeId = 8,
                 LastName = "Callahan",
@@ -139,7 +136,7 @@ namespace Lesson2
                 HomePhone = "(206) 555-1189"
             };
 
-            var Employee9 = new ListEmployee
+            var employee9 = new Employee
             {
                 EmployeeId = 9,
                 LastName = "Dodsworth",
@@ -154,28 +151,27 @@ namespace Lesson2
                 Country = "USA",
                 HomePhone = "(71) 555-4444"
             };
-           
-            var employees = new List<ListEmployee>();
 
-        employees.Add(Employee1);
-        employees.Add(Employee2);
-        employees.Add(Employee3);
-        employees.Add(Employee4);
-        employees.Add(Employee5);
-        employees.Add(Employee6);
-        employees.Add(Employee7);
-        employees.Add(Employee8);
-        employees.Add(Employee9);
-
-
-            foreach (var Employee in employees)
+            var employees = new List<Employee>
             {
-                Console.WriteLine($"{Employee.EmployeeId} | {Employee.FirstName} | {Employee.LastName} | {Employee.Title} | {Employee.TitleOfCourtesy} | {Employee.DateOfBirth.ToShortDateString()} | {Employee.Address}| {Employee.City}| {Employee.Region} | {Employee.PostCode} | {Employee.Country} | {Employee.HomePhone}");
+                employee1,
+                employee2,
+                employee3,
+                employee4,
+                employee5,
+                employee6,
+                employee7,
+                employee8,
+                employee9
+            };
+            
+            foreach (var employee in employees)
+            {
+                Console.WriteLine($"{employee.EmployeeId} | {employee.FirstName} | {employee.LastName} | {employee.Title} | {employee.TitleOfCourtesy} | {employee.DateOfBirth.ToShortDateString()} | {employee.Address}| {employee.City}| {employee.Region} | {employee.PostCode} | {employee.Country} | {employee.HomePhone}");
             }
 
             Console.ReadLine();
-
-
+            
         }
     }
 }
