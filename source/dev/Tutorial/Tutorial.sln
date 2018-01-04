@@ -1,13 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2005
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson1", "Lesson1\Lesson1.csproj", "{96F162E9-FAC0-42F9-8823-3D450376AD2C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice1", "Practice1\Practice1.csproj", "{B71C6FE4-077E-4061-84FB-E250F5E5F32C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson2", "Lesson2\Lesson2.csproj", "{17593715-7D53-4B66-9DEA-89D0EB804FE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Forms", "Forms", "{00D8360D-0274-4D41-8CA2-F7174304C91F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement", "EmployeeManagement\EmployeeManagement.csproj", "{19703AEA-FF13-4CB8-A59E-180AA477F9CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{A8576126-D4FF-45B3-9272-72D35ADC3594}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeSite", "EmployeeSite\EmployeeSite.csproj", "{9CCAD99B-8890-4F63-BD26-E9202B9D8386}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +35,21 @@ Global
 		{17593715-7D53-4B66-9DEA-89D0EB804FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17593715-7D53-4B66-9DEA-89D0EB804FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17593715-7D53-4B66-9DEA-89D0EB804FE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19703AEA-FF13-4CB8-A59E-180AA477F9CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19703AEA-FF13-4CB8-A59E-180AA477F9CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19703AEA-FF13-4CB8-A59E-180AA477F9CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19703AEA-FF13-4CB8-A59E-180AA477F9CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CCAD99B-8890-4F63-BD26-E9202B9D8386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CCAD99B-8890-4F63-BD26-E9202B9D8386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CCAD99B-8890-4F63-BD26-E9202B9D8386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CCAD99B-8890-4F63-BD26-E9202B9D8386}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{19703AEA-FF13-4CB8-A59E-180AA477F9CA} = {00D8360D-0274-4D41-8CA2-F7174304C91F}
+		{9CCAD99B-8890-4F63-BD26-E9202B9D8386} = {A8576126-D4FF-45B3-9272-72D35ADC3594}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AA62EC0F-9502-4B74-9A81-015D52E667AB}
