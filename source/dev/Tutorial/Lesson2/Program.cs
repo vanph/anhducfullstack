@@ -24,6 +24,7 @@ namespace Lesson2
                 HomePhone = "(206) 555-9857"
             };
 
+            
             var employee2 = new Employee
             {
                 EmployeeId = 2,
@@ -167,7 +168,8 @@ namespace Lesson2
             
             foreach (var employee in employees)
             {
-                Console.WriteLine($"{employee.EmployeeId} | {employee.FirstName} | {employee.LastName} | {employee.Title} | {employee.TitleOfCourtesy} | {employee.DateOfBirth.ToShortDateString()} | {employee.Address}| {employee.City}| {employee.Region} | {employee.PostCode} | {employee.Country} | {employee.HomePhone}");
+                //employee.Print();
+                Console.WriteLine(employee.GetEmployeeDescription());
             }
 
             Console.ReadLine();
