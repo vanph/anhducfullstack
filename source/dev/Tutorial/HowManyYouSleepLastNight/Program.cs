@@ -13,7 +13,6 @@ namespace HowManyYouSleepLastNight
             Console.WriteLine("How many hours of sleep did you get last night?");
 
             string numberText = Console.ReadLine();
-
             int numberHourSleep = int.Parse(numberText);
             
             if (numberHourSleep < 8)
