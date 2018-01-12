@@ -10,25 +10,30 @@ namespace PrimeNumberLess1000
     {
         static void Main(string[] args)
         {
-            bool PrimeNumberCorrect = true;
-            Console.WriteLine("PrimeNumber is: ");
-            for (int i = 2; i<1000; i++)
+            Console.WriteLine("Prime Numbers are: ");
+
+            for (int i = 2; i < 1000; i++)
             {
-                for (int j = 2; j< 1000; j++)
-                {
-                    if (i != j && i % j ==0)
-                    {
-                        PrimeNumberCorrect = false;
-                        break;
-                    }
-                }
-                if (PrimeNumberCorrect)
+                if(IsPrimeNumber(i))
                 {
                     Console.Write("\t" + i);
-                }
-                PrimeNumberCorrect = true;
+                }              
             }
+            
             Console.ReadKey();
+        }
+
+        private static bool IsPrimeNumber(int number)
+        {            
+            for (int i = 2; i< number; i ++ )
+            {
+                if (number % i == 0)
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
     }
 }

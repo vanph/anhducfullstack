@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueTypes", "ValueTypes\Va
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumberLess1000", "PrimeNumberLess1000\PrimeNumberLess1000.csproj", "{42BC3771-4815-4023-9049-68AC5BFB9198}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumberLess1000UseInputNumber", "PrimeNumberLess1000UseInputNumber\PrimeNumberLess1000UseInputNumber.csproj", "{45343806-E255-442C-BCBA-A30EF387FD3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowManyYouSleepLastNight", "HowManyYouSleepLastNight\HowManyYouSleepLastNight.csproj", "{EFF5AECB-C10F-41A0-93CC-6787BFAA13E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +59,14 @@ Global
 		{42BC3771-4815-4023-9049-68AC5BFB9198}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42BC3771-4815-4023-9049-68AC5BFB9198}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42BC3771-4815-4023-9049-68AC5BFB9198}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45343806-E255-442C-BCBA-A30EF387FD3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45343806-E255-442C-BCBA-A30EF387FD3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45343806-E255-442C-BCBA-A30EF387FD3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45343806-E255-442C-BCBA-A30EF387FD3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFF5AECB-C10F-41A0-93CC-6787BFAA13E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFF5AECB-C10F-41A0-93CC-6787BFAA13E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFF5AECB-C10F-41A0-93CC-6787BFAA13E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFF5AECB-C10F-41A0-93CC-6787BFAA13E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
