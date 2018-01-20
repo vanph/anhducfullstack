@@ -18,12 +18,13 @@ namespace ResulOfOperationAndTwoNumber
 
             Console.WriteLine("Input second number:");
             var y = Convert.ToInt32(Console.ReadLine());
-            
-            var allowedOperations = new string[] {"*", "-", "+"};
-            if(allowedOperations.Contains(operation))
+
+            OperatorEnum? myOperator = GetOperator(operation);
+
+            if (myOperator.HasValue)
             {
                 var calculation = new Calculation();
-                var result = calculation.Calculate(x, y, operation);
+                var result = calculation.Calculate(x, y, myOperator.Value);
 
                 Console.WriteLine($"{x} {operation} {y} = {result}");
             }
@@ -31,13 +32,33 @@ namespace ResulOfOperationAndTwoNumber
             {
                 Console.WriteLine("Invalid operator !");
             }
-           
 
             Console.ReadLine();
 
         }
 
-       
+        private static OperatorEnum? GetOperator(string operationString)
+        {
+            switch (operationString)
+            {
+                case "+":
+                case "Add":
+                    return OperatorEnum.Addition;
+                case "-":
+                case "Subtract":
+                    return OperatorEnum.Substraction;
+                case "*":
+                case "Multiply":
+                    return OperatorEnum.Multiplication;
+
+                case "/":
+                case "Devide":
+                    return OperatorEnum.Division;
+
+                default:
+                    return null;
+            }
+        }
     }
 }
 
