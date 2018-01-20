@@ -18,27 +18,12 @@ namespace ResulOfOperationAndTwoNumber
 
             Console.WriteLine("Input second number:");
             var y = Convert.ToInt32(Console.ReadLine());
-
-            //switch (operation)
-            //{
-            //    case "+":
-            //        Console.WriteLine($"{x} + {y} = {x+y}");
-            //        break;
-            //    case "-":
-            //        Console.WriteLine($"{x} - {y} = {x-y}");
-            //        break;
-            //    case "*":
-            //        Console.WriteLine($"{x} * {y} = {x*y}");
-            //        break;
-            //    default:
-            //        Console.WriteLine("Please you input again correct !");
-            //        break;
-            //}
-
+            
             var allowedOperations = new string[] {"*", "-", "+"};
             if(allowedOperations.Contains(operation))
             {
-                var result = Calculate(x, y, operation);
+                var calculation = new Calculation();
+                var result = calculation.Calculate(x, y, operation);
 
                 Console.WriteLine($"{x} {operation} {y} = {result}");
             }
@@ -52,20 +37,7 @@ namespace ResulOfOperationAndTwoNumber
 
         }
 
-        private static int Calculate(int x, int y, string operation)
-        {
-            switch (operation)
-            {
-                case "+":
-                    return  x + y;
-                case "-":
-                    return x - y;
-                case "*":
-                    return x * y;
-                default:
-                    throw new Exception("Do not support this operation");
-            }
-        }
+       
     }
 }
 
