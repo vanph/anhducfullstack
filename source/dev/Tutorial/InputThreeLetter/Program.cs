@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace InputThreeLetter
 {
@@ -10,16 +7,31 @@ namespace InputThreeLetter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("\nInput letter 1:");
-            String letter1 = Console.ReadLine();
+            //Console.WriteLine("\nInput letter 1:");
+            //var letter1 = Console.ReadLine();
 
-            Console.WriteLine("\nInput letter 2:");
-            String letter2 = Console.ReadLine();
+            //Console.WriteLine("\nInput letter 2:");
+            //var letter2 = Console.ReadLine();
 
-            Console.WriteLine("\nInput letter 3:");
-            String letter3 = Console.ReadLine();
+            //Console.WriteLine("\nInput letter 3:");
+            //var letter3 = Console.ReadLine();
 
-            Console.Write("Output theme in reserve order:" + letter3 + letter2 + letter1);
+            //Console.Write($"Output them in reserve order: {letter3}, {letter2}, {letter1}");
+
+            //string input = "hello world";
+            //string output = "";
+            //for (int i = input.Length - 1; i >= 0; i--)
+            //{
+            //    output += input[i];
+            //}
+
+            string input = "hello world";
+            string output = new string(input.ToCharArray().Reverse().ToArray());
+
+            var output2 = new string(input.ToCharArray().OrderBy(x => x).ToArray());
+            Console.WriteLine(output);
+            Console.WriteLine(output2);
+
             Console.ReadLine();
         }
     }

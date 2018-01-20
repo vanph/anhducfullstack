@@ -10,26 +10,61 @@ namespace ResulOfOperationAndTwoNumber
     {
         static void Main(string[] args)
         {
-            int x, y;
-            char operation;
-
             Console.WriteLine("Input first number:");
-            x = Convert.ToInt32(Console.ReadLine());
+            var x = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Operation:");
-            operation = Convert.ToChar(Console.ReadLine());
+            var operation = Console.ReadLine();
 
             Console.WriteLine("Input second number:");
-            y = Convert.ToInt32(Console.ReadLine());
+            var y = Convert.ToInt32(Console.ReadLine());
 
-            if (operation == '+')
-                Console.WriteLine("{0} + {1} = {2}", x, y, x + y);
-            else if (operation == '-')
-                Console.WriteLine("{0} - {1} = {2}", x, y, x - y);
-            else Console.WriteLine("Please you input again correct !");
+            //switch (operation)
+            //{
+            //    case "+":
+            //        Console.WriteLine($"{x} + {y} = {x+y}");
+            //        break;
+            //    case "-":
+            //        Console.WriteLine($"{x} - {y} = {x-y}");
+            //        break;
+            //    case "*":
+            //        Console.WriteLine($"{x} * {y} = {x*y}");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Please you input again correct !");
+            //        break;
+            //}
+
+            var allowedOperations = new string[] {"*", "-", "+"};
+            if(allowedOperations.Contains(operation))
+            {
+                var result = Calculate(x, y, operation);
+
+                Console.WriteLine($"{x} {operation} {y} = {result}");
+            }
+            else
+            {
+                Console.WriteLine("Invalid operator !");
+            }
+           
 
             Console.ReadLine();
 
+        }
+
+        private static int Calculate(int x, int y, string operation)
+        {
+            switch (operation)
+            {
+                case "+":
+                    return  x + y;
+                case "-":
+                    return x - y;
+                case "*":
+                    return x * y;
+                default:
+                    throw new Exception("Do not support this operation");
+            }
         }
     }
 }
