@@ -103,8 +103,7 @@ namespace RefTypes
             Console.WriteLine("Before:");
             Console.WriteLine($"Emp1: {emp1.FullName} at age: {emp1.Age}");
             Console.WriteLine($"Emp2: {emp2.FullName} at age: {emp2.Age}");
-
-
+            
             emp2.FirstName = "Pham";
             emp2.Age = 25;
 
