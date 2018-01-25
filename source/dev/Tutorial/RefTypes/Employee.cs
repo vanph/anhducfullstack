@@ -13,5 +13,10 @@ namespace RefTypes
         public string LastName { get; set; }
 
         public int Age { get; set; }
+
+        public string FullName
+        {
+            get { return $"{FirstName} {LastName}"; }
+        }
     }
 }

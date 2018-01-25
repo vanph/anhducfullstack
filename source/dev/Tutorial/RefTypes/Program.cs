@@ -10,30 +10,38 @@ namespace RefTypes
     {
         static void Main(string[] args)
         {
-            int a = 10;
-            int b = a;//b=10
-            b = 15;
+            //int a = 10;
+            //int b = a;//b=10
+            //b = 15;
 
-            //a? , b?
+            //a = 10 , b = 15 
 
-            Console.WriteLine($"a = {a}, b ={b}");
+            // Console.WriteLine($"a = {a}, b ={b}");
 
-            var emp1 = new Employee() {FirstName = "Duc", LastName = "Ngo", Age = 30};
+            var emp1 = new Employee() { FirstName = "Ngo", LastName = "Anh Duc", Age = 30 };
 
             var emp2 = emp1;
             Console.WriteLine("Before:");
-            Console.WriteLine($"Emp1: {emp1.FirstName} - {emp1.LastName} - {emp1.Age}");
-            Console.WriteLine($"Emp2: {emp2.FirstName} - {emp2.LastName} - {emp2.Age}");
+            Console.WriteLine($"Emp1: {emp1.FullName} at age: {emp1.Age}");
+            Console.WriteLine($"Emp2: {emp2.FullName} at age: {emp2.Age}");
 
 
-            emp2.FirstName = "Van";
-            emp2.Age = 12;
+            emp2.FirstName = "Pham";
+            emp2.Age = 25;
 
-            //emp1? emp2 ?
+            ////emp1? emp2 ?
 
             Console.WriteLine("After changed emp2:");
-            Console.WriteLine($"Emp1: {emp1.FirstName} - {emp1.LastName} - {emp1.Age}");
-            Console.WriteLine($"Emp2: {emp2.FirstName} - {emp2.LastName} - {emp2.Age}");
+            Console.WriteLine($"Emp1: {emp1.FullName} at age: {emp1.Age}");
+            Console.WriteLine($"Emp2: {emp2.FullName} at age: {emp2.Age}");
+
+            var emp3 = emp2;
+            emp3.LastName = "Van";
+
+            Console.WriteLine("After changed emp3:");
+            Console.WriteLine($"Emp1: {emp1.FullName} at age: {emp1.Age}");
+            Console.WriteLine($"Emp2: {emp2.FullName} at age: {emp2.Age}");
+            Console.WriteLine($"Emp3: {emp3.FullName} at age: {emp3.Age}");
 
             Console.ReadLine();
         }
