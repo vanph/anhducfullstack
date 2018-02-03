@@ -11,7 +11,7 @@ namespace ForLoopPractice
         //Write a program in C# Sharp to display the first 10 natural numbers
         public void Test()
         {
-            Console.WriteLine("Display the first 10 natural numbers:\n");
+            Console.WriteLine("Display the first 10 natural numbers:");
             Console.WriteLine("---------------------------------------");
            
             for (var i = 1; i <= 10; i++)
