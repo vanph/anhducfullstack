@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson1", "Lesson1\Lesson1.csproj", "{96F162E9-FAC0-42F9-8823-3D450376AD2C}"
 EndProject
@@ -30,6 +30,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResulOfOperationAndTwoNumber", "ResulOfOperationAndTwoNumber\ResulOfOperationAndTwoNumber.csproj", "{B284CEF1-2438-423B-A65F-C74EF4F79B06}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefTypes", "RefTypes\RefTypes.csproj", "{F78D7BE7-928F-42E2-A281-893439BEB1A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciAfter", "Fibonacci\FibonacciAfter.csproj", "{D25713CA-3F90-46A0-913F-DCED9E6D82B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +87,10 @@ Global
 		{F78D7BE7-928F-42E2-A281-893439BEB1A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F78D7BE7-928F-42E2-A281-893439BEB1A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F78D7BE7-928F-42E2-A281-893439BEB1A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D25713CA-3F90-46A0-913F-DCED9E6D82B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D25713CA-3F90-46A0-913F-DCED9E6D82B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D25713CA-3F90-46A0-913F-DCED9E6D82B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D25713CA-3F90-46A0-913F-DCED9E6D82B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
