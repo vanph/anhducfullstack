@@ -8,9 +8,9 @@ namespace CalculateANumberInFibonacciSeries
 {
     class Program
     {
-        static int Main(string[] args)
+        static void Main(string[] args)
         {
-            int n, i = 0, c;
+            int n, i = 1, c;
             Console.WriteLine("Enter the number of terms:");
             n = Convert.ToInt16(Console.ReadLine());
 
@@ -23,22 +23,23 @@ namespace CalculateANumberInFibonacciSeries
                 i++;
             }
             Console.WriteLine();
+
             Console.ReadLine();
-            return 0;
         }
 
         public static int FibonacciFunction(int n)
         {
-            if (n == 0)
-            {
-                return 0;
-            }
-            else if (n == 1)
+            if (n == 1)
             {
                 return 1;
             }
-            else
-                return (FibonacciFunction(n - 1) + FibonacciFunction(n - 2));
+
+            if (n == 2)
+            {
+                return 1;
+            }
+
+            return FibonacciFunction(n - 1) + FibonacciFunction(n - 2);
         }
     }
 }
