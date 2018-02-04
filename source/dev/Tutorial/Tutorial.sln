@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2005
+VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson1", "Lesson1\Lesson1.csproj", "{96F162E9-FAC0-42F9-8823-3D450376AD2C}"
 EndProject
@@ -32,7 +32,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefTypes", "RefTypes\RefTypes.csproj", "{F78D7BE7-928F-42E2-A281-893439BEB1A3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculateANumberInFibonacciSeries", "CalculateANumberInFibonacciSeries\CalculateANumberInFibonacciSeries.csproj", "{CD53DD4F-FDFD-4ED3-9F8A-43B31EB20052}"
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciAfter", "Fibonacci\FibonacciAfter.csproj", "{D25713CA-3F90-46A0-913F-DCED9E6D82B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci", "Fibonacci\Fibonacci.csproj", "{D25713CA-3F90-46A0-913F-DCED9E6D82B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
