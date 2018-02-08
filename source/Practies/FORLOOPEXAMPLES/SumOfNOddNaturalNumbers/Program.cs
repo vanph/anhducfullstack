@@ -10,20 +10,20 @@ namespace SumOfNOddNaturalNumbers
     {
         static void Main(string[] args)
         {
-            int sum = 0;
-            Console.WriteLine($"Display the sum of n odd natural number:");
-            Console.WriteLine($"------------------------------------------");
-            Console.WriteLine($"Input number of terms : ");
-            int n = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine($"The odd numbers are :");
-            for (int i = 1; i <= n; i++)
-            {
-                //Console.Write("{0} ", 2 * i - 1);
-                Console.WriteLine(2 * i - 1);
-                sum += 2 * i - 1;
-            }
-            Console.WriteLine($"The Sum of odd Natural Number upto {n} terms : {sum}",n,sum);
+            
+            Console.WriteLine("Display the sum of n odd natural number:");
+            Console.WriteLine("------------------------------------------");
+            Console.WriteLine("Input number of terms : ");
+
+            var number = Convert.ToInt32(Console.ReadLine());
+
+            var myCalculator = new MyCalculator();
+            var sum = myCalculator.SumOfOddNumbers(number);
+
+            Console.WriteLine($"The Sum of odd Natural Number upto {number} terms : {sum}");
             Console.ReadLine();
         }
+
+       
     }
 }
