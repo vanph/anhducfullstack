@@ -42,6 +42,19 @@ namespace Demo
             {
                 Console.WriteLine(c);
             }
+
+            var emp1 = new Employee() {FirstName = "van", LastName = "Pham"};
+            var emp2 = new Employee() { FirstName = "Duc", LastName = "Ngo" };
+            //var employees = new Employee[] {emp1, emp2};
+
+            var employees = new Employee[2];
+            employees[0] = emp1;
+            employees[1] = emp2;
+
+            foreach (var emp in employees)
+            {
+                Console.WriteLine($"FirstName: {emp.FirstName} - LastName: {emp.LastName}");
+            }
             Console.ReadLine();
         }
     }
