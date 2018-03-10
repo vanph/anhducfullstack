@@ -44,6 +44,9 @@ namespace SumApp
             MessageBox.Show(!number2Valid ? @"Please input correct Number 2" : @"Please input correct Number 1");
         }
 
-      
+        private void txtNumber1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
