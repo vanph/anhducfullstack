@@ -20,7 +20,6 @@ namespace ExtensionMethodSample
                 StringSplitOptions.RemoveEmptyEntries).Length;
         }
 
-        
         public static int WordCountNew(this string str)
         {
             return str.Split(new char[] { ' ', '.', '?' },
