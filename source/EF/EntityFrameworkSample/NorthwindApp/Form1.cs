@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -29,6 +30,22 @@ namespace NorthwindApp
             var query = dbContext.Employees;
             var employees = query.ToList();
             dataGridView1.DataSource = employees;
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            var dbContext = new NorthwindEntities();
+            
+            var keyword = txtKeyword.Text;
+
+            var query =  dbContext.Employees as IQueryable<Employee>;
+            if (!string.IsNullOrEmpty(keyword))
+            {
+                query = query.Where(x => x.LastName.Contains(keyword) || x.FirstName.Contains(keyword));
+            }
+
+            dataGridView1.DataSource = query.ToList();
+
         }
     }
 }
