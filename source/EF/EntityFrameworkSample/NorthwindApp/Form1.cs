@@ -46,6 +46,19 @@ namespace NorthwindApp
 
             dataGridView1.DataSource = query.ToList();
 
+            var query1 = dbContext.Customers as IQueryable<Customer>;
+            if (!string.IsNullOrEmpty(keyword))
+            {
+                query1 = query1.Where(y => y.CompanyName.Contains(keyword) || y.ContactName.Contains(keyword));
+            }
+
+            dataGridView2.DataSource = query1.ToList();
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

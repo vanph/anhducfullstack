@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFirstFromDb", "CodeFirs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindApp", "NorthwindApp\NorthwindApp.csproj", "{B3BBA2BE-9442-49DC-B3DE-6328900589EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindApp1", "NorthwindApp1\NorthwindApp1.csproj", "{72D7A757-C811-400B-BF3E-2A1BD5873B9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B3BBA2BE-9442-49DC-B3DE-6328900589EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3BBA2BE-9442-49DC-B3DE-6328900589EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3BBA2BE-9442-49DC-B3DE-6328900589EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72D7A757-C811-400B-BF3E-2A1BD5873B9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72D7A757-C811-400B-BF3E-2A1BD5873B9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72D7A757-C811-400B-BF3E-2A1BD5873B9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72D7A757-C811-400B-BF3E-2A1BD5873B9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
