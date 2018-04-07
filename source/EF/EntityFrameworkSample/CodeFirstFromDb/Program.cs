@@ -12,11 +12,14 @@ namespace CodeFirstFromDb
         static void Main(string[] args)
         {
             Console.WriteLine("Starting");
-            var dbContext = new StudentManagementEntities();
-            //var classes = dbContext.LopHocs.ToList();
-            var classes = (from e in dbContext.LopHocs select e).ToList();
-            PrintClasses(classes);
+            //var dbContext = new StudentManagementEntities();
+            ////var classes = dbContext.LopHocs.ToList();
+            //var classes = (from e in dbContext.LopHocs select e).ToList();
+            //PrintClasses(classes);
+            Guid g = Guid.NewGuid();
+            Console.WriteLine(g);
 
+            Console.WriteLine(DateTime.Now);
             Console.ReadLine();
         }
 
