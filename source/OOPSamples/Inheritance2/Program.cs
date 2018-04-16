@@ -10,11 +10,18 @@ namespace Inheritance2
     {
         static void Main(string[] args)
         {
-           var f = new Fish();
-            f.Swim();
+            //var f = new Fish(true);
+            //f.Swim();
 
-            var b = new Bird();
-            b.Fly();
+            var deadFish= new Fish(false);
+            deadFish.Swim();
+
+            // var b = new Bird();
+            // b.Fly();
+
+
+            //var m = new Mammal(){Name = "Cat"};
+            //m.Run();
 
             Console.Read();
 

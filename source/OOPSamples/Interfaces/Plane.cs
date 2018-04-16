@@ -9,9 +9,10 @@ namespace Interfaces
     //implement
     class Plane:IFlyable
     {
+        public string Brand { get; set; }
         public void Fly()
         {
-            Console.WriteLine("plane flies");
+            Console.WriteLine($"Plane {Brand} flies");
         }
         
     }

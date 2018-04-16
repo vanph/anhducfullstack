@@ -4,3 +4,9 @@ D:\training\students\luong\Tutorial\Tutorial\samples\Named & Optional\obj\x86\De
 D:\training\students\luong\Tutorial\Tutorial\samples\Named & Optional\obj\x86\Debug\NamedAndOptional.csproj.CoreCompileInputs.cache
 D:\training\students\luong\Tutorial\Tutorial\samples\Named & Optional\obj\x86\Debug\NamedAndOptional.exe
 D:\training\students\luong\Tutorial\Tutorial\samples\Named & Optional\obj\x86\Debug\NamedAndOptional.pdb
+E:\CSharpToturial\anhducfullstack\source\samples\Named & Optional\bin\Debug\NamedAndOptional.exe
+E:\CSharpToturial\anhducfullstack\source\samples\Named & Optional\bin\Debug\NamedAndOptional.pdb
+E:\CSharpToturial\anhducfullstack\source\samples\Named & Optional\obj\x86\Debug\NamedAndOptional.csprojResolveAssemblyReference.cache
+E:\CSharpToturial\anhducfullstack\source\samples\Named & Optional\obj\x86\Debug\NamedAndOptional.csproj.CoreCompileInputs.cache
+E:\CSharpToturial\anhducfullstack\source\samples\Named & Optional\obj\x86\Debug\NamedAndOptional.exe
+E:\CSharpToturial\anhducfullstack\source\samples\Named & Optional\obj\x86\Debug\NamedAndOptional.pdb

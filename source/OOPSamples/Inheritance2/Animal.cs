@@ -8,10 +8,31 @@ namespace Inheritance2
 {
     abstract class Animal
     {
+        protected abstract bool CheckAlive();
+
         protected virtual void Move()
         {
-            Console.WriteLine("Moving...");
+            if (CheckAlive())
+            {
+                Console.WriteLine("Moving...");
+            }
+            else
+            {
+                Console.WriteLine("Dead! Cannot move");
+            }
+            
         }
 
+        public void Eat()
+        {
+            if (CheckAlive())
+            {
+                Console.WriteLine("animal eats");
+            }
+            else
+            {
+                Console.WriteLine("Dead! Cannot eat");
+            }
+        }
     }
 }

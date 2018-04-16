@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2F9E00B9-F05D-4CE0-A67C-5DE550672209}</ProjectGuid>
+    <ProjectGuid>{B2B71139-34BE-42D5-87BC-7CCF74A573A7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Inheritance</RootNamespace>
-    <AssemblyName>Inheritance</AssemblyName>
+    <RootNamespace>OverloadMethods</RootNamespace>
+    <AssemblyName>OverloadMethods</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,18 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Quadrilateral.cs" />
-    <Compile Include="Rectangle.cs" />
-    <Compile Include="RightTriangle.cs" />
-    <Compile Include="Shape.cs" />
-    <Compile Include="Square.cs" />
-    <Compile Include="Triangle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

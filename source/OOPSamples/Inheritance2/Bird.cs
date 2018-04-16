@@ -16,6 +16,11 @@ namespace Inheritance2
             Console.WriteLine("Flying...");
         }
 
+        protected override bool CheckAlive()
+        {
+            return true;
+        }
+
         protected override void Move()
         {
             Console.WriteLine("Bird is moving...");

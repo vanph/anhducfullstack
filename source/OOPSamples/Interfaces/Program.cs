@@ -10,10 +10,10 @@ namespace Interfaces
     {
         static void Main(string[] args)
         {
-           var bird = new Bird();
+           var bird = new Bird(){Name = "Chim se"};
            // bird.Fly();
 
-            var plane = new Plane();
+            var plane = new Plane(){Brand = "VN Airlines"};
            // p.Fly();
 
             //var lst = new List<object>();
@@ -39,11 +39,11 @@ namespace Interfaces
             //    }
             //}
 
-            var lst2 = new List<IFlyable>();
-            lst2.Add(plane);
-            lst2.Add(bird);
+            var listObjects = new List<IFlyable>();
+            listObjects.Add(plane);
+            listObjects.Add(bird);
 
-            foreach (var item in lst2)
+            foreach (var item in listObjects)
             {
                 item.Fly();
             }

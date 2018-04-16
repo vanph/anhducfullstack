@@ -9,15 +9,10 @@ namespace Interfaces
     class Bird:IFlyable
     {
         public string Name { get; set; }
-
+        
         public void Fly()
         {
-            Console.WriteLine("Bird flies");
-        }
-
-        public void Move()
-        {
-            throw new NotImplementedException();
+            Console.WriteLine($"Bird {Name} is flying...");
         }
     }
 }
