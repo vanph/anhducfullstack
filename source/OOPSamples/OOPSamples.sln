@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverloadMethods", "Optional
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamedAndOptional", "..\samples\Named & Optional\NamedAndOptional.csproj", "{4703EDF5-B779-49E7-97CB-5BA1E10DC271}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphism", "Polymorphism\Polymorphism.csproj", "{6204F2A7-60EF-4810-9BCE-A44715A38292}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,14 @@ Global
 		{4703EDF5-B779-49E7-97CB-5BA1E10DC271}.Release|Any CPU.ActiveCfg = Release|x86
 		{4703EDF5-B779-49E7-97CB-5BA1E10DC271}.Release|x86.ActiveCfg = Release|x86
 		{4703EDF5-B779-49E7-97CB-5BA1E10DC271}.Release|x86.Build.0 = Release|x86
+		{6204F2A7-60EF-4810-9BCE-A44715A38292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6204F2A7-60EF-4810-9BCE-A44715A38292}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6204F2A7-60EF-4810-9BCE-A44715A38292}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6204F2A7-60EF-4810-9BCE-A44715A38292}.Debug|x86.Build.0 = Debug|Any CPU
+		{6204F2A7-60EF-4810-9BCE-A44715A38292}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6204F2A7-60EF-4810-9BCE-A44715A38292}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6204F2A7-60EF-4810-9BCE-A44715A38292}.Release|x86.ActiveCfg = Release|Any CPU
+		{6204F2A7-60EF-4810-9BCE-A44715A38292}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
