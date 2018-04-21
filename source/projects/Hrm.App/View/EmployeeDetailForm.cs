@@ -4,12 +4,12 @@ using Hrm.App.Enumerations;
 
 namespace Hrm.App.View
 {
-    public sealed partial class DistrictDetailForm : Form
+    public sealed partial class EmployeeDetailForm : Form
     {
         private readonly EditMode _editMode;
         private readonly string _selectedCode;
 
-        public DistrictDetailForm(EditMode editMode, string code = "")
+        public EmployeeDetailForm(EditMode editMode, string code = "")
         {
             InitializeComponent();
 

@@ -8,5 +8,10 @@ namespace Hrm.App.View
         {
             InitializeComponent();
         }
+
+        private void btnClose_Click(object sender, System.EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

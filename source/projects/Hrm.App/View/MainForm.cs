@@ -4,10 +4,10 @@ using Hrm.App.Enumerations;
 
 namespace Hrm.App.View
 {
-    public partial class DistrictListForm : Form
+    public partial class MainForm : Form
     {
 
-        public DistrictListForm()
+        public MainForm()
         {
             InitializeComponent();
 
@@ -45,7 +45,7 @@ namespace Hrm.App.View
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            var frmDetail = new DistrictDetailForm(EditMode.AddNew);
+            var frmDetail = new EmployeeDetailForm(EditMode.AddNew);
             var dialogResult = frmDetail.ShowDialog();
             if (dialogResult == DialogResult.OK)
             {
@@ -112,7 +112,7 @@ namespace Hrm.App.View
 
         private void cityToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var listCityForm = new CityListForm();
+            var listCityForm = new OrganizationListForm();
             listCityForm.ShowDialog();
 
         }

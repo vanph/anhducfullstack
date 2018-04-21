@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Hrm.App</RootNamespace>
     <AssemblyName>Hrm.App</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,20 +34,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CsvHelper, Version=3.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
-      <HintPath>packages\CsvHelper.3.2.0\lib\net45\CsvHelper.dll</HintPath>
-    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\RestSharp.105.2.3\lib\net452\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -65,43 +57,44 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enumerations\EditMode.cs" />
+    <Compile Include="ViewModel\OrganizationViewModel.cs" />
     <Compile Include="View\AboutForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\AboutForm.Designer.cs">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\CityListForm.cs">
+    <Compile Include="View\OrganizationListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\CityListForm.Designer.cs">
-      <DependentUpon>CityListForm.cs</DependentUpon>
+    <Compile Include="View\OrganizationListForm.Designer.cs">
+      <DependentUpon>OrganizationListForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\DistrictDetailForm.cs">
+    <Compile Include="View\EmployeeDetailForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\DistrictDetailForm.Designer.cs">
-      <DependentUpon>DistrictDetailForm.cs</DependentUpon>
+    <Compile Include="View\EmployeeDetailForm.Designer.cs">
+      <DependentUpon>EmployeeDetailForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\DistrictListForm.cs">
+    <Compile Include="View\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\DistrictListForm.Designer.cs">
-      <DependentUpon>DistrictListForm.cs</DependentUpon>
+    <Compile Include="View\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="View\AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\CityListForm.resx">
-      <DependentUpon>CityListForm.cs</DependentUpon>
+    <EmbeddedResource Include="View\OrganizationListForm.resx">
+      <DependentUpon>OrganizationListForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\DistrictDetailForm.resx">
-      <DependentUpon>DistrictDetailForm.cs</DependentUpon>
+    <EmbeddedResource Include="View\EmployeeDetailForm.resx">
+      <DependentUpon>EmployeeDetailForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\DistrictListForm.resx">
-      <DependentUpon>DistrictListForm.cs</DependentUpon>
+    <EmbeddedResource Include="View\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -127,6 +120,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="homework.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hrm.DataAccess\Hrm.DataAccess.csproj">
+      <Project>{08e0ec3e-c290-4bf3-9ea1-66a09dbbd5fe}</Project>
+      <Name>Hrm.DataAccess</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

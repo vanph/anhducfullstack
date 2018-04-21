@@ -1,6 +1,6 @@
 ﻿namespace Hrm.App.View
 {
-    sealed partial class DistrictDetailForm
+    sealed partial class EmployeeDetailForm
     {
         /// <summary>
         /// Required designer variable.

@@ -1,6 +1,6 @@
 ﻿namespace Hrm.App.View
 {
-    partial class DistrictListForm
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -37,7 +37,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,7 +64,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnClearSearch = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.uSAStateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.grdDistrict)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -87,11 +85,12 @@
             this.Column1,
             this.Column2,
             this.Column3});
-            this.grdDistrict.Location = new System.Drawing.Point(8, 45);
+            this.grdDistrict.Location = new System.Drawing.Point(11, 55);
+            this.grdDistrict.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grdDistrict.MultiSelect = false;
             this.grdDistrict.Name = "grdDistrict";
             this.grdDistrict.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grdDistrict.Size = new System.Drawing.Size(768, 162);
+            this.grdDistrict.Size = new System.Drawing.Size(1024, 199);
             this.grdDistrict.TabIndex = 0;
             this.grdDistrict.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
@@ -101,7 +100,7 @@
             this.Column1.DataPropertyName = "DistrictCode";
             this.Column1.HeaderText = "District Code";
             this.Column1.Name = "Column1";
-            this.Column1.Width = 92;
+            this.Column1.Width = 117;
             // 
             // Column2
             // 
@@ -122,9 +121,10 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(299, 9);
+            this.label1.Location = new System.Drawing.Point(399, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 18);
+            this.label1.Size = new System.Drawing.Size(212, 22);
             this.label1.TabIndex = 2;
             this.label1.Text = "My Country Application";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -133,20 +133,22 @@
             // 
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 42);
+            this.panel1.Location = new System.Drawing.Point(0, 52);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(784, 40);
+            this.panel1.Size = new System.Drawing.Size(1045, 49);
             this.panel1.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(40, 15);
+            this.label4.Location = new System.Drawing.Point(53, 18);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 16);
+            this.label4.Size = new System.Drawing.Size(125, 20);
             this.label4.TabIndex = 5;
-            this.label4.Text = "District list :";
+            this.label4.Text = "Employee List :";
             // 
             // panel3
             // 
@@ -155,41 +157,33 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.Controls.Add(this.grdDistrict);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Location = new System.Drawing.Point(0, 151);
+            this.panel3.Location = new System.Drawing.Point(0, 186);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(784, 210);
+            this.panel3.Size = new System.Drawing.Size(1045, 258);
             this.panel3.TabIndex = 6;
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.label8);
             this.panel6.Controls.Add(this.menuStrip1);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(784, 42);
+            this.panel6.Size = new System.Drawing.Size(1045, 52);
             this.panel6.TabIndex = 4;
-            // 
-            // label8
-            // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(695, 11);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(39, 13);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Sign in";
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.cityToolStripMenuItem,
-            this.uSAStateToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(784, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1045, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -199,28 +193,28 @@
             this.importToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // importToolStripMenuItem
             // 
             this.importToolStripMenuItem.Name = "importToolStripMenuItem";
-            this.importToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.importToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.importToolStripMenuItem.Text = "Import";
             this.importToolStripMenuItem.Click += new System.EventHandler(this.importToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // cityToolStripMenuItem
             // 
             this.cityToolStripMenuItem.Name = "cityToolStripMenuItem";
-            this.cityToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
-            this.cityToolStripMenuItem.Text = "City";
+            this.cityToolStripMenuItem.Size = new System.Drawing.Size(113, 24);
+            this.cityToolStripMenuItem.Text = "Organizations";
             this.cityToolStripMenuItem.Click += new System.EventHandler(this.cityToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
@@ -228,13 +222,13 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -242,9 +236,10 @@
             // 
             this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnAdd.Location = new System.Drawing.Point(151, 16);
+            this.btnAdd.Location = new System.Drawing.Point(201, 20);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(90, 30);
+            this.btnAdd.Size = new System.Drawing.Size(120, 37);
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -254,9 +249,10 @@
             // 
             this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnEdit.Location = new System.Drawing.Point(250, 16);
+            this.btnEdit.Location = new System.Drawing.Point(333, 20);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(90, 30);
+            this.btnEdit.Size = new System.Drawing.Size(120, 37);
             this.btnEdit.TabIndex = 7;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
@@ -266,9 +262,10 @@
             // 
             this.btn_delete.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.btn_delete.Location = new System.Drawing.Point(349, 16);
+            this.btn_delete.Location = new System.Drawing.Point(465, 20);
+            this.btn_delete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(90, 30);
+            this.btn_delete.Size = new System.Drawing.Size(120, 37);
             this.btn_delete.TabIndex = 7;
             this.btn_delete.Text = "Delete";
             this.btn_delete.UseVisualStyleBackColor = true;
@@ -281,18 +278,20 @@
             this.panel4.Controls.Add(this.btnAdd);
             this.panel4.Controls.Add(this.btn_delete);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 367);
+            this.panel4.Location = new System.Drawing.Point(0, 452);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(784, 71);
+            this.panel4.Size = new System.Drawing.Size(1045, 87);
             this.panel4.TabIndex = 8;
             // 
             // btnView
             // 
             this.btnView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnView.Location = new System.Drawing.Point(55, 16);
+            this.btnView.Location = new System.Drawing.Point(73, 20);
+            this.btnView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(90, 30);
+            this.btnView.Size = new System.Drawing.Size(120, 37);
             this.btnView.TabIndex = 7;
             this.btnView.Text = "View";
             this.btnView.UseVisualStyleBackColor = true;
@@ -302,9 +301,10 @@
             // 
             this.panel5.Controls.Add(this.groupBox1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 438);
+            this.panel5.Location = new System.Drawing.Point(0, 539);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(784, 123);
+            this.panel5.Size = new System.Drawing.Size(1045, 151);
             this.panel5.TabIndex = 9;
             // 
             // groupBox1
@@ -318,9 +318,11 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Location = new System.Drawing.Point(8, 6);
+            this.groupBox1.Location = new System.Drawing.Point(11, 7);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(768, 105);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(1024, 129);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "District information";
@@ -328,54 +330,60 @@
             // lblCityName
             // 
             this.lblCityName.AutoSize = true;
-            this.lblCityName.Location = new System.Drawing.Point(127, 74);
+            this.lblCityName.Location = new System.Drawing.Point(169, 91);
+            this.lblCityName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCityName.Name = "lblCityName";
-            this.lblCityName.Size = new System.Drawing.Size(52, 13);
+            this.lblCityName.Size = new System.Drawing.Size(68, 17);
             this.lblCityName.TabIndex = 0;
             this.lblCityName.Text = "CityName";
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(127, 46);
+            this.lblName.Location = new System.Drawing.Point(169, 57);
+            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(35, 13);
+            this.lblName.Size = new System.Drawing.Size(45, 17);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name";
             // 
             // lblDistrictCode
             // 
             this.lblDistrictCode.AutoSize = true;
-            this.lblDistrictCode.Location = new System.Drawing.Point(127, 20);
+            this.lblDistrictCode.Location = new System.Drawing.Point(169, 25);
+            this.lblDistrictCode.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDistrictCode.Name = "lblDistrictCode";
-            this.lblDistrictCode.Size = new System.Drawing.Size(64, 13);
+            this.lblDistrictCode.Size = new System.Drawing.Size(84, 17);
             this.lblDistrictCode.TabIndex = 0;
             this.lblDistrictCode.Text = "DistrictCode";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(28, 74);
+            this.label7.Location = new System.Drawing.Point(37, 91);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 13);
+            this.label7.Size = new System.Drawing.Size(80, 17);
             this.label7.TabIndex = 0;
             this.label7.Text = "City Name :";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(28, 46);
+            this.label6.Location = new System.Drawing.Point(37, 57);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 13);
+            this.label6.Size = new System.Drawing.Size(53, 17);
             this.label6.TabIndex = 0;
             this.label6.Text = "Name :";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(28, 20);
+            this.label5.Location = new System.Drawing.Point(37, 25);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 13);
+            this.label5.Size = new System.Drawing.Size(96, 17);
             this.label5.TabIndex = 0;
             this.label5.Text = "District Code :";
             // 
@@ -385,9 +393,10 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(40, 30);
+            this.label2.Location = new System.Drawing.Point(53, 37);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 16);
+            this.label2.Size = new System.Drawing.Size(83, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "Keyword :";
             // 
@@ -397,19 +406,21 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(280, 27);
+            this.label3.Location = new System.Drawing.Point(373, 33);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 16);
+            this.label3.Size = new System.Drawing.Size(114, 20);
             this.label3.TabIndex = 0;
-            this.label3.Text = "City :";
+            this.label3.Text = "Organization :";
             // 
             // txtSearch
             // 
             this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtSearch.Location = new System.Drawing.Point(112, 26);
+            this.txtSearch.Location = new System.Drawing.Point(149, 32);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(136, 20);
+            this.txtSearch.Size = new System.Drawing.Size(180, 22);
             this.txtSearch.TabIndex = 1;
             // 
             // cbbCity
@@ -417,9 +428,10 @@
             this.cbbCity.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.cbbCity.FormattingEnabled = true;
-            this.cbbCity.Location = new System.Drawing.Point(322, 25);
+            this.cbbCity.Location = new System.Drawing.Point(429, 31);
+            this.cbbCity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbbCity.Name = "cbbCity";
-            this.cbbCity.Size = new System.Drawing.Size(166, 21);
+            this.cbbCity.Size = new System.Drawing.Size(220, 24);
             this.cbbCity.TabIndex = 2;
             this.cbbCity.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -427,9 +439,10 @@
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(524, 19);
+            this.button1.Location = new System.Drawing.Point(699, 23);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 30);
+            this.button1.Size = new System.Drawing.Size(111, 37);
             this.button1.TabIndex = 3;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = true;
@@ -439,9 +452,10 @@
             // 
             this.btnClearSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClearSearch.Location = new System.Drawing.Point(629, 19);
+            this.btnClearSearch.Location = new System.Drawing.Point(839, 23);
+            this.btnClearSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClearSearch.Name = "btnClearSearch";
-            this.btnClearSearch.Size = new System.Drawing.Size(96, 30);
+            this.btnClearSearch.Size = new System.Drawing.Size(128, 37);
             this.btnClearSearch.TabIndex = 3;
             this.btnClearSearch.Text = "Clear Search";
             this.btnClearSearch.UseVisualStyleBackColor = true;
@@ -456,22 +470,17 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 82);
+            this.panel2.Location = new System.Drawing.Point(0, 101);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(784, 66);
+            this.panel2.Size = new System.Drawing.Size(1045, 81);
             this.panel2.TabIndex = 4;
             // 
-            // uSAStateToolStripMenuItem
+            // MainForm
             // 
-            this.uSAStateToolStripMenuItem.Name = "uSAStateToolStripMenuItem";
-            this.uSAStateToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
-            this.uSAStateToolStripMenuItem.Text = "Countries";
-            // 
-            // DistrictListForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(1045, 690);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel6);
@@ -479,7 +488,8 @@
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "DistrictListForm";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "My Country Application";
             this.Load += new System.EventHandler(this.MainForm_Load);
@@ -531,7 +541,6 @@
         private System.Windows.Forms.Button btnClearSearch;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem importToolStripMenuItem;
@@ -540,7 +549,6 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Button btnView;
-        private System.Windows.Forms.ToolStripMenuItem uSAStateToolStripMenuItem;
     }
 }
 

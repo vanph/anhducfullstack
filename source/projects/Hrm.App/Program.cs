@@ -14,7 +14,7 @@ namespace Hrm.App
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DistrictListForm());
+            Application.Run(new MainForm());
         }
     }
 }
