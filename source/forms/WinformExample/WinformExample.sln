@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormInCSharpWinform", "Form
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlForm", "ControlForm\ControlForm.csproj", "{0AEF21AD-5C65-455A-9F0F-8D47C96E82AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginForm", "LoginForm\LoginForm.csproj", "{99B5CCFC-076A-40F7-B2CC-2C1EE4CD320A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistrationForm", "RegistrationForm\RegistrationForm.csproj", "{A24562F7-AAE9-44B1-8117-136AD317D9EE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{0AEF21AD-5C65-455A-9F0F-8D47C96E82AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AEF21AD-5C65-455A-9F0F-8D47C96E82AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AEF21AD-5C65-455A-9F0F-8D47C96E82AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99B5CCFC-076A-40F7-B2CC-2C1EE4CD320A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99B5CCFC-076A-40F7-B2CC-2C1EE4CD320A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99B5CCFC-076A-40F7-B2CC-2C1EE4CD320A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99B5CCFC-076A-40F7-B2CC-2C1EE4CD320A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A24562F7-AAE9-44B1-8117-136AD317D9EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A24562F7-AAE9-44B1-8117-136AD317D9EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A24562F7-AAE9-44B1-8117-136AD317D9EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A24562F7-AAE9-44B1-8117-136AD317D9EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
