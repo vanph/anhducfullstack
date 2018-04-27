@@ -13,5 +13,6 @@ namespace Hrm.App.View
         {
             this.Close();
         }
+
     }
 }

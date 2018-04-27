@@ -33,6 +33,7 @@
             this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grdOrg)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,8 +48,8 @@
             this.Description,
             this.Email,
             this.Phone});
-            this.grdOrg.Location = new System.Drawing.Point(63, 48);
-            this.grdOrg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grdOrg.Location = new System.Drawing.Point(59, 77);
+            this.grdOrg.Margin = new System.Windows.Forms.Padding(4);
             this.grdOrg.Name = "grdOrg";
             this.grdOrg.Size = new System.Drawing.Size(716, 281);
             this.grdOrg.TabIndex = 0;
@@ -84,16 +85,28 @@
             this.Phone.Name = "Phone";
             this.Phone.Width = 80;
             // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(829, 54);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Organization List";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // OrganizationListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(829, 393);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.grdOrg);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "OrganizationListForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "City";
+            this.Text = "OrganizationList";
             this.Load += new System.EventHandler(this.OrganizationListForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdOrg)).EndInit();
             this.ResumeLayout(false);
@@ -106,5 +119,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Description;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
+        private System.Windows.Forms.Label label1;
     }
 }
