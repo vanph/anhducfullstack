@@ -1,6 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 using Hrm.App.Enumerations;
+using Hrm.App.ViewModel;
+using Hrm.DataAccess;
 
 namespace Hrm.App.View
 {
@@ -11,112 +15,123 @@ namespace Hrm.App.View
         {
             InitializeComponent();
 
+            lblCode.Text = "";
+            lblFullName.Text = "";
+            lblEmail.Text = "";
+            lblDob.Text = "";
+
+            grdEmployees.AutoGenerateColumns = false;
+          
         }
 
 
-        private void btnSeach_Click(object sender, EventArgs e)
-        {
-        }
-
-
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-        }
-
-        private void btnClearSearch_click(object sender, EventArgs e)
-        {
 
         }
 
-        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        private void ButtonSearch_Click(object sender, EventArgs e)
         {
-            if (grdDistrict.SelectedRows.Count > 0)
+            var dbContext = new HrmEntities();
+
+            var employeeViewModels = dbContext.Employees.Select(x => new EmployeeViewModel()
             {
+                Id = x.Id,
+                OrganizationId = x.OrganizationId,
+                Code = x.Code,
+                Email = x.Email,
+                FirstName = x.FirstName,
+                MiddleName = x.MiddleName,
+                LastName = x.LastName,
+                Dob = x.Dob
+            }).OrderBy(x=> x.Code).ToList();
+
+            grdEmployees.DataSource = employeeViewModels;
+        }
+
+        private void ButtonClearSearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GridViewEmployees_SelectionChanged(object sender, EventArgs e)
+        {
+            if (grdEmployees.SelectedRows.Count > 0)
+            {
+                var empViewModel = grdEmployees.SelectedRows[0].DataBoundItem as EmployeeViewModel;
+
+                if (empViewModel != null)
+                {
+                    lblCode.Text = empViewModel.Code;
+                    lblFullName.Text = empViewModel.FullName;
+                    lblEmail.Text = empViewModel.Email;
+                    lblDob.Text = empViewModel.Dob.HasValue? empViewModel.Dob.Value.ToShortDateString(): string.Empty;
+                }
 
             }
-
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void ButtonAdd_Click(object sender, EventArgs e)
         {
             var frmDetail = new EmployeeDetailForm(EditMode.AddNew);
-            var dialogResult = frmDetail.ShowDialog();
-            if (dialogResult == DialogResult.OK)
-            {
-                MessageBox.Show(@"Successfully added district", @"Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            }
+            frmDetail.ShowDialog();
         }
 
-        private void btnEdit_Click(object sender, EventArgs e)
+        private void ButtonEdit_Click(object sender, EventArgs e)
         {
-            if (grdDistrict.SelectedRows.Count > 0)
+            if (grdEmployees.SelectedRows.Count > 0)
             {
+                var frmDetail = new EmployeeDetailForm(EditMode.Edit);
 
+                frmDetail.ShowDialog();
             }
             else
             {
-                MessageBox.Show(@"Please select a district to edit", @"Message", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(@"Please select an employee to edit", @"Message", MessageBoxButtons.OK,
+                    MessageBoxIcon.Exclamation);
             }
+               
         }
 
-        private void btnView_Click(object sender, EventArgs e)
+        private void ButtonView_Click(object sender, EventArgs e)
         {
-            if (grdDistrict.SelectedRows.Count > 0)
+            if (grdEmployees.SelectedRows.Count > 0)
             {
+                var frmDetail = new EmployeeDetailForm(EditMode.View);
 
+                frmDetail.ShowDialog();
             }
             else
             {
-                MessageBox.Show(@"Please select a district to view details", @"Message", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(@"Please select an employee to view", @"Message", MessageBoxButtons.OK,
+                    MessageBoxIcon.Exclamation);
             }
         }
 
-        private void btn_delete_Click(object sender, EventArgs e)
+        private void ButtonDelete_Click(object sender, EventArgs e)
         {
-
-            if (grdDistrict.SelectedRows.Count > 0)
+            if (grdEmployees.SelectedRows.Count > 0)
             {
+                var empViewModel = grdEmployees.SelectedRows[0].DataBoundItem as EmployeeViewModel;
 
+                if (empViewModel != null)
+                {
+                    var dialogResult = MessageBox.Show($@"Do you want to delete the employee {empViewModel.Code}?",
+                        @"Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        MessageBox.Show(@"to implement later");
+                    }
+
+                }
             }
             else
             {
-                MessageBox.Show(@"Please select a district to delete", @"Message", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(@"Please select an employee to view", @"Message", MessageBoxButtons.OK,
+                    MessageBoxIcon.Exclamation);
             }
-
-
         }
-
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var frmAbout = new AboutForm();
-            frmAbout.ShowDialog();
-        }
-
-
-        private void importToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cityToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var listCityForm = new OrganizationListForm();
-            listCityForm.ShowDialog();
-
-        }
-
-
     }
 }

@@ -117,19 +117,67 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Dob.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        xZKOwY6MvYyIuIiGsoOqbVHlhlvxZTGcPRovHBEAAAAAAAAAAAAAAAAAAAAAAAAAAAB2PSX1kWHSk29X
+        QCqv6a2v7K+t6a2q5aqn4ael3qWi26Kg16Cd1Z2b0ZuYzpiVypWSxZKOwY6LvYuJtoarbVLliV7xZzOc
+        PRovHBEAAAAAAAAAAAAAAAAAAAAAAAAAAAB2PSX1kWHSk29RNiJ9iGJ9imN8iGJ6h2F5hV95hF93gl12
+        gFx0f1pzfVlye1hweVdvd1VtdVNrc1JrcE96TDXah13xaTWcPRovHBEAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAB2PSX1kWHhnniPYESPYESPYESPYESPYESPYESPYESPYESPYESPYESPYESPYESPYESPYESPYESPXkOP
+        XUGOWz/fj2XxazecPRovHBEAAAAAAAAAAAAAAAAAAAAAAAAAAABXLRvMd073pHf3pHf3pHf3pHf3pHf3
+        pHf3pHf3pHf3pHf3pHf3pHf3pHf3pHf3pHf3pHf3pHf3oXX3n3H1m271mWrycD2SPRwiFAwAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAABKJxfTbkLTbkLTbkLTbkLTbkLTbkLTbkLTbkLTbkLTbkLTbkLTbkLTbkLT
+        bkLTbkLTbkLTbkLTbkLTbkLTbkLTbkJmNSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD//////AAAH/gAAAf4AAAH+AAAB/gAAAf4AAAH+AAAB/gAAAf4AAAH+AAAB/gA
+        AAf4AAAH+AAAB/gAAAf4AAAH+AAAB/gAAAf4AAAH+AAAB/gAAAf4AAAH+AAAB/gAAAf4AAAH+AAAB/gA
+        AAf4AAAH+AAAB/gAAAf8AAAf/////w==
+</value>
+  </data>
 </root>

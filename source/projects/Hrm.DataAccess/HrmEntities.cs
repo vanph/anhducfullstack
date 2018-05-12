@@ -22,10 +22,6 @@ namespace Hrm.DataAccess
                 .IsUnicode(false);
 
             modelBuilder.Entity<Organization>()
-                .Property(e => e.Phone)
-                .IsFixedLength();
-
-            modelBuilder.Entity<Organization>()
                 .Property(e => e.CreatedBy)
                 .IsUnicode(false);
 
