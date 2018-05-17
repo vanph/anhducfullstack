@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Linq;
 using System.Windows.Forms;
-using Hrm.App.ViewModel;
+using Hrm.App.Models;
 using Hrm.DataAccess;
 
-namespace Hrm.App.View
+namespace Hrm.App.Views
 {
     public partial class OrganizationListForm : Form
     {
@@ -18,7 +18,7 @@ namespace Hrm.App.View
         private void OrganizationListForm_Load(object sender, EventArgs e)
         {
             var dbContext = new HrmEntities();
-            var query = dbContext.Organizations.Select(x => new OrganizationViewModel()
+            var query = dbContext.Organizations.Select(x => new OrganizationModel()
             {
                 Id = x.Id,
                 Name = x.Name,

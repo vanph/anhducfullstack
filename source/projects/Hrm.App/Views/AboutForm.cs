@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace Hrm.App.View
+namespace Hrm.App.Views
 {
     public partial class AboutForm : Form
     {

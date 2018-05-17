@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Hrm.App.ViewModel
+namespace Hrm.App.Models
 {
-    public class EmployeeViewModel
+    public class EmployeeModel
     {
         public Guid Id { get; set; }
 
@@ -23,6 +19,8 @@ namespace Hrm.App.ViewModel
         public string Email { get; set; }
 
         public DateTime? Dob { get; set; }
+
+        public string OrganizationName {get; set;}
 
         #region Calculated Property
 

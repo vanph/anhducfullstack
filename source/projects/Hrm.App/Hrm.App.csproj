@@ -57,44 +57,44 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enumerations\EditMode.cs" />
-    <Compile Include="ViewModel\EmployeeViewModel.cs" />
-    <Compile Include="ViewModel\OrganizationViewModel.cs" />
-    <Compile Include="View\AboutForm.cs">
+    <Compile Include="Models\EmployeeModel.cs" />
+    <Compile Include="Models\OrganizationModel.cs" />
+    <Compile Include="Views\AboutForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\AboutForm.Designer.cs">
+    <Compile Include="Views\AboutForm.Designer.cs">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\OrganizationListForm.cs">
+    <Compile Include="Views\OrganizationListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\OrganizationListForm.Designer.cs">
+    <Compile Include="Views\OrganizationListForm.Designer.cs">
       <DependentUpon>OrganizationListForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\EmployeeDetailForm.cs">
+    <Compile Include="Views\EmployeeDetailForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\EmployeeDetailForm.Designer.cs">
+    <Compile Include="Views\EmployeeDetailForm.Designer.cs">
       <DependentUpon>EmployeeDetailForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\MainForm.cs">
+    <Compile Include="Views\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\MainForm.Designer.cs">
+    <Compile Include="Views\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="View\AboutForm.resx">
+    <EmbeddedResource Include="Views\AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\OrganizationListForm.resx">
+    <EmbeddedResource Include="Views\OrganizationListForm.resx">
       <DependentUpon>OrganizationListForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\EmployeeDetailForm.resx">
+    <EmbeddedResource Include="Views\EmployeeDetailForm.resx">
       <DependentUpon>EmployeeDetailForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\MainForm.resx">
+    <EmbeddedResource Include="Views\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

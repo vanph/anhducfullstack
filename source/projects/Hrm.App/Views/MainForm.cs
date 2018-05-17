@@ -1,16 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 using Hrm.App.Enumerations;
-using Hrm.App.ViewModel;
+using Hrm.App.Models;
 using Hrm.DataAccess;
 
-namespace Hrm.App.View
+namespace Hrm.App.Views
 {
     public partial class MainForm : Form
     {
-
+        private readonly HrmEntities _dbContext;
         public MainForm()
         {
             InitializeComponent();
@@ -21,7 +20,7 @@ namespace Hrm.App.View
             lblDob.Text = "";
 
             grdEmployees.AutoGenerateColumns = false;
-          
+            _dbContext = new HrmEntities();
         }
 
 
@@ -33,9 +32,31 @@ namespace Hrm.App.View
 
         private void ButtonSearch_Click(object sender, EventArgs e)
         {
-            var dbContext = new HrmEntities();
+            SearchEmployees();
+        }
 
-            var employeeViewModels = dbContext.Employees.Select(x => new EmployeeViewModel()
+        private void SearchEmployees()
+        {
+            //var query = from emp in dbContext.Employees
+                        //            join org in dbContext.Organizations on emp.OrganizationId equals org.Id
+                        //            select new EmployeeModel()
+                        //            {
+                        //                Id = emp.Id,
+                        //                OrganizationId = emp.OrganizationId,
+                        //                Code = emp.Code,
+                        //                Email = emp.Email,
+                        //                FirstName = emp.FirstName,
+                        //                MiddleName = emp.MiddleName,
+                        //                LastName = emp.LastName,
+                        //                Dob = emp.Dob,
+                        //                OrganizationName = org.Name
+                        //            };
+
+                        //grdEmployees.DataSource = query.ToList();
+
+            //Lazy loading
+
+            var employeeModels = _dbContext.Employees.Select(x => new EmployeeModel()
             {
                 Id = x.Id,
                 OrganizationId = x.OrganizationId,
@@ -44,10 +65,11 @@ namespace Hrm.App.View
                 FirstName = x.FirstName,
                 MiddleName = x.MiddleName,
                 LastName = x.LastName,
-                Dob = x.Dob
-            }).OrderBy(x=> x.Code).ToList();
+                Dob = x.Dob,
+                OrganizationName = x.Organization.Name
+            }).OrderBy(x => x.Code).ToList();
 
-            grdEmployees.DataSource = employeeViewModels;
+            grdEmployees.DataSource = employeeModels;
         }
 
         private void ButtonClearSearch_Click(object sender, EventArgs e)
@@ -59,14 +81,14 @@ namespace Hrm.App.View
         {
             if (grdEmployees.SelectedRows.Count > 0)
             {
-                var empViewModel = grdEmployees.SelectedRows[0].DataBoundItem as EmployeeViewModel;
+                var empViewModel = grdEmployees.SelectedRows[0].DataBoundItem as EmployeeModel;
 
                 if (empViewModel != null)
                 {
                     lblCode.Text = empViewModel.Code;
                     lblFullName.Text = empViewModel.FullName;
                     lblEmail.Text = empViewModel.Email;
-                    lblDob.Text = empViewModel.Dob.HasValue? empViewModel.Dob.Value.ToShortDateString(): string.Empty;
+                    lblDob.Text = empViewModel.Dob.HasValue ? empViewModel.Dob.Value.ToShortDateString() : string.Empty;
                 }
 
             }
@@ -76,32 +98,57 @@ namespace Hrm.App.View
         {
             var frmDetail = new EmployeeDetailForm(EditMode.AddNew);
 
-            frmDetail.ShowDialog();
+            var dialogResult =  frmDetail.ShowDialog();
+            if (dialogResult == DialogResult.OK)
+            {
+                MessageBox.Show(@"Successfully added employee", @"Message", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                SearchEmployees();
+            }
         }
 
         private void ButtonEdit_Click(object sender, EventArgs e)
         {
             if (grdEmployees.SelectedRows.Count > 0)
             {
-                var frmDetail = new EmployeeDetailForm(EditMode.Edit);
+                var empEditModel = grdEmployees.SelectedRows[0].DataBoundItem as EmployeeModel;
 
-                frmDetail.ShowDialog();
+                if (empEditModel != null)
+                {
+                    var frmDetail = new EmployeeDetailForm(EditMode.Edit);
+                    frmDetail.SelectedEmployee = empEditModel;
+
+                   var  dialogResult = frmDetail.ShowDialog();
+                    if (dialogResult == DialogResult.OK)
+                    {
+                        MessageBox.Show(@"Successfully updated the employee", @"Message", MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+                        SearchEmployees();
+                    }
+                }
+                
             }
             else
             {
                 MessageBox.Show(@"Please select an employee to edit", @"Message", MessageBoxButtons.OK,
                     MessageBoxIcon.Exclamation);
             }
-               
+
         }
 
         private void ButtonView_Click(object sender, EventArgs e)
         {
             if (grdEmployees.SelectedRows.Count > 0)
             {
-                var frmDetail = new EmployeeDetailForm(EditMode.View);
+                var empViewModel = grdEmployees.SelectedRows[0].DataBoundItem as EmployeeModel;
 
-                frmDetail.ShowDialog();
+                if (empViewModel != null)
+                {
+                    var frmDetail = new EmployeeDetailForm(EditMode.View);
+                    frmDetail.SelectedEmployee = empViewModel;
+
+                    frmDetail.ShowDialog();
+                }
             }
             else
             {
@@ -114,7 +161,7 @@ namespace Hrm.App.View
         {
             if (grdEmployees.SelectedRows.Count > 0)
             {
-                var empViewModel = grdEmployees.SelectedRows[0].DataBoundItem as EmployeeViewModel;
+                var empViewModel = grdEmployees.SelectedRows[0].DataBoundItem as EmployeeModel;
 
                 if (empViewModel != null)
                 {
@@ -132,7 +179,7 @@ namespace Hrm.App.View
                 MessageBox.Show(@"Please select an employee to view", @"Message", MessageBoxButtons.OK,
                     MessageBoxIcon.Exclamation);
             }
-        }  
+        }
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {

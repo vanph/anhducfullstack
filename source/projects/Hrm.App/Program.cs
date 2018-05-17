@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using Hrm.App.View;
+using Hrm.App.Views;
 
 namespace Hrm.App
 {

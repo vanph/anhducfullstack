@@ -1,4 +1,4 @@
-﻿namespace Hrm.App.View
+﻿namespace Hrm.App.Views
 {
     partial class AboutForm
     {
