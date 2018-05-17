@@ -10,13 +10,12 @@ namespace CountTotalNumberOfWordsInAString
     {
         static void Main(string[] args)
         {
-            string str;
-            int i, wrd, l;
+            int wrd, l;
 
             Console.WriteLine("\nCount the total number of words in a string :");
-            Console.WriteLine($"------------------------------------------------------\n");
+            Console.WriteLine("------------------------------------------------------\n");
             Console.WriteLine("Input the string : ");
-            str = Console.ReadLine();
+            var str = Console.ReadLine();
 
             l = 0;
             wrd = 1;

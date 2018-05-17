@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Linq;
 using System.Windows.Forms;
 using Hrm.App.Enumerations;
+using Hrm.App.ViewModel;
+using Hrm.DataAccess;
 
 namespace Hrm.App.View
 {
@@ -12,6 +15,7 @@ namespace Hrm.App.View
         public EmployeeDetailForm(EditMode editMode, string code = "")
         {
             InitializeComponent();
+
 
             _editMode = editMode;
 
@@ -42,18 +46,15 @@ namespace Hrm.App.View
         }
 
 
-        private void DistrictDetailForm_Load(object sender, EventArgs e)
-        {
-           
-
-        }
-
         private void btnSave_Click(object sender, EventArgs e)
         {
           
 
         }
 
-
+        private void ButtonCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

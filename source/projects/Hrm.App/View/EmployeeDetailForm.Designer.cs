@@ -33,18 +33,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtCode = new System.Windows.Forms.TextBox();
-            this.txtType = new System.Windows.Forms.TextBox();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.txtMiddleName = new System.Windows.Forms.TextBox();
             this.lb1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.cbbFirstName = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.txtFullName = new System.Windows.Forms.TextBox();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lb2
@@ -53,9 +53,9 @@
             this.lb2.Location = new System.Drawing.Point(40, 87);
             this.lb2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb2.Name = "lb2";
-            this.lb2.Size = new System.Drawing.Size(29, 17);
+            this.lb2.Size = new System.Drawing.Size(45, 17);
             this.lb2.TabIndex = 0;
-            this.lb2.Text = "ID :";
+            this.lb2.Text = "Code:";
             // 
             // label2
             // 
@@ -63,9 +63,9 @@
             this.label2.Location = new System.Drawing.Point(40, 131);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 17);
+            this.label2.Size = new System.Drawing.Size(80, 17);
             this.label2.TabIndex = 0;
-            this.label2.Text = "First Name :";
+            this.label2.Text = "First Name:";
             // 
             // label3
             // 
@@ -73,67 +73,43 @@
             this.label3.Location = new System.Drawing.Point(40, 175);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 17);
+            this.label3.Size = new System.Drawing.Size(94, 17);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Middle Name :";
+            this.label3.Text = "Middle Name:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(40, 224);
+            this.label4.Location = new System.Drawing.Point(40, 218);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 17);
+            this.label4.Size = new System.Drawing.Size(80, 17);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Last Name :";
+            this.label4.Text = "Last Name:";
             // 
             // txtCode
             // 
             this.txtCode.Location = new System.Drawing.Point(165, 87);
-            this.txtCode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCode.Margin = new System.Windows.Forms.Padding(4);
             this.txtCode.Name = "txtCode";
             this.txtCode.Size = new System.Drawing.Size(311, 22);
             this.txtCode.TabIndex = 1;
             // 
-            // txtType
+            // txtLastName
             // 
-            this.txtType.Location = new System.Drawing.Point(165, 218);
-            this.txtType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtType.Name = "txtType";
-            this.txtType.Size = new System.Drawing.Size(311, 22);
-            this.txtType.TabIndex = 3;
+            this.txtLastName.Location = new System.Drawing.Point(165, 218);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(311, 22);
+            this.txtLastName.TabIndex = 3;
             // 
-            // txtName
+            // txtMiddleName
             // 
-            this.txtName.Location = new System.Drawing.Point(165, 175);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(311, 22);
-            this.txtName.TabIndex = 2;
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.Red;
-            this.btnSave.Location = new System.Drawing.Point(165, 400);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(100, 28);
-            this.btnSave.TabIndex = 4;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.BackColor = System.Drawing.Color.Red;
-            this.btnCancel.Location = new System.Drawing.Point(288, 400);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(100, 28);
-            this.btnCancel.TabIndex = 5;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            this.txtMiddleName.Location = new System.Drawing.Point(165, 175);
+            this.txtMiddleName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMiddleName.Name = "txtMiddleName";
+            this.txtMiddleName.Size = new System.Drawing.Size(311, 22);
+            this.txtMiddleName.TabIndex = 2;
             // 
             // lb1
             // 
@@ -148,22 +124,13 @@
             this.lb1.Text = "Employee Detail";
             this.lb1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox2
+            // txtEmail
             // 
-            this.textBox2.Location = new System.Drawing.Point(165, 305);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(311, 22);
-            this.textBox2.TabIndex = 11;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(165, 261);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(311, 24);
-            this.comboBox1.TabIndex = 7;
+            this.txtEmail.Location = new System.Drawing.Point(165, 305);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(311, 22);
+            this.txtEmail.TabIndex = 11;
             // 
             // label6
             // 
@@ -171,9 +138,9 @@
             this.label6.Location = new System.Drawing.Point(40, 349);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 17);
+            this.label6.Size = new System.Drawing.Size(39, 17);
             this.label6.TabIndex = 8;
-            this.label6.Text = "DoB :";
+            this.label6.Text = "DoB:";
             // 
             // label7
             // 
@@ -181,9 +148,9 @@
             this.label7.Location = new System.Drawing.Point(40, 305);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 17);
+            this.label7.Size = new System.Drawing.Size(46, 17);
             this.label7.TabIndex = 9;
-            this.label7.Text = "Email :";
+            this.label7.Text = "Email:";
             // 
             // label8
             // 
@@ -191,18 +158,9 @@
             this.label8.Location = new System.Drawing.Point(40, 261);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(79, 17);
+            this.label8.Size = new System.Drawing.Size(75, 17);
             this.label8.TabIndex = 10;
-            this.label8.Text = "Full Name :";
-            // 
-            // cbbFirstName
-            // 
-            this.cbbFirstName.FormattingEnabled = true;
-            this.cbbFirstName.Location = new System.Drawing.Point(165, 128);
-            this.cbbFirstName.Margin = new System.Windows.Forms.Padding(4);
-            this.cbbFirstName.Name = "cbbFirstName";
-            this.cbbFirstName.Size = new System.Drawing.Size(311, 24);
-            this.cbbFirstName.TabIndex = 0;
+            this.label8.Text = "Full Name:";
             // 
             // dateTimePicker1
             // 
@@ -211,36 +169,70 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(311, 22);
             this.dateTimePicker1.TabIndex = 12;
             // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(165, 400);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(87, 28);
+            this.btnSave.TabIndex = 13;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(326, 400);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(87, 28);
+            this.btnCancel.TabIndex = 13;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.ButtonCancel_Click);
+            // 
+            // txtFullName
+            // 
+            this.txtFullName.Location = new System.Drawing.Point(165, 261);
+            this.txtFullName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.Size = new System.Drawing.Size(311, 22);
+            this.txtFullName.TabIndex = 3;
+            // 
+            // txtFirstName
+            // 
+            this.txtFirstName.Location = new System.Drawing.Point(165, 131);
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(311, 22);
+            this.txtFirstName.TabIndex = 2;
+            // 
             // EmployeeDetailForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(595, 456);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lb1);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.txtName);
-            this.Controls.Add(this.txtType);
+            this.Controls.Add(this.txtFirstName);
+            this.Controls.Add(this.txtMiddleName);
+            this.Controls.Add(this.txtFullName);
+            this.Controls.Add(this.txtLastName);
             this.Controls.Add(this.txtCode);
-            this.Controls.Add(this.cbbFirstName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lb2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "EmployeeDetailForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "EmployeeDetailForm";
-            this.Load += new System.EventHandler(this.DistrictDetailForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,17 +245,17 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtCode;
-        private System.Windows.Forms.TextBox txtType;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.TextBox txtLastName;
+        private System.Windows.Forms.TextBox txtMiddleName;
         private System.Windows.Forms.Label lb1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox cbbFirstName;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.TextBox txtFullName;
+        private System.Windows.Forms.TextBox txtFirstName;
     }
 }

@@ -132,6 +132,12 @@ namespace Hrm.App.View
                 MessageBox.Show(@"Please select an employee to view", @"Message", MessageBoxButtons.OK,
                     MessageBoxIcon.Exclamation);
             }
+        }  
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmAbout = new AboutForm();
+            frmAbout.ShowDialog();
         }
     }
 }

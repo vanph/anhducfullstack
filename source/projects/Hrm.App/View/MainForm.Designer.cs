@@ -42,7 +42,7 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.organiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -193,7 +193,7 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.cityToolStripMenuItem,
+            this.organiToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -223,11 +223,11 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
-            // cityToolStripMenuItem
+            // organiToolStripMenuItem
             // 
-            this.cityToolStripMenuItem.Name = "cityToolStripMenuItem";
-            this.cityToolStripMenuItem.Size = new System.Drawing.Size(113, 24);
-            this.cityToolStripMenuItem.Text = "Organizations";
+            this.organiToolStripMenuItem.Name = "organiToolStripMenuItem";
+            this.organiToolStripMenuItem.Size = new System.Drawing.Size(113, 24);
+            this.organiToolStripMenuItem.Text = "Organizations";
             // 
             // helpToolStripMenuItem
             // 
@@ -236,11 +236,12 @@
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // btnAdd
@@ -574,7 +575,7 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem importToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cityToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem organiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Button btnView;
