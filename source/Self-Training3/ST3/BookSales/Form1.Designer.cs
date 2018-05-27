@@ -89,7 +89,7 @@
             this.lblTotalMoney.Location = new System.Drawing.Point(225, 165);
             this.lblTotalMoney.Name = "lblTotalMoney";
             this.lblTotalMoney.Size = new System.Drawing.Size(379, 29);
-            this.lblTotalMoney.TabIndex = 3;
+            this.lblTotalMoney.TabIndex = 4;
             this.lblTotalMoney.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label4
@@ -110,7 +110,7 @@
             this.chkIsStudent.Location = new System.Drawing.Point(23, 120);
             this.chkIsStudent.Name = "chkIsStudent";
             this.chkIsStudent.Size = new System.Drawing.Size(187, 24);
-            this.chkIsStudent.TabIndex = 2;
+            this.chkIsStudent.TabIndex = 3;
             this.chkIsStudent.Text = "Customer is student:";
             this.chkIsStudent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.chkIsStudent.UseVisualStyleBackColor = true;
@@ -120,7 +120,7 @@
             this.txtNumber.Location = new System.Drawing.Point(225, 78);
             this.txtNumber.Name = "txtNumber";
             this.txtNumber.Size = new System.Drawing.Size(379, 26);
-            this.txtNumber.TabIndex = 1;
+            this.txtNumber.TabIndex = 2;
             this.txtNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtName
@@ -169,7 +169,7 @@
             this.btnExit.Location = new System.Drawing.Point(483, 37);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 39);
-            this.btnExit.TabIndex = 0;
+            this.btnExit.TabIndex = 3;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             // 
@@ -180,9 +180,10 @@
             this.btnStatistic.Location = new System.Drawing.Point(351, 37);
             this.btnStatistic.Name = "btnStatistic";
             this.btnStatistic.Size = new System.Drawing.Size(88, 39);
-            this.btnStatistic.TabIndex = 0;
+            this.btnStatistic.TabIndex = 2;
             this.btnStatistic.Text = "Statistic";
             this.btnStatistic.UseVisualStyleBackColor = true;
+            this.btnStatistic.Click += new System.EventHandler(this.ButtonStatistic_Click);
             // 
             // btnNext
             // 
@@ -191,9 +192,10 @@
             this.btnNext.Location = new System.Drawing.Point(232, 37);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(75, 39);
-            this.btnNext.TabIndex = 0;
+            this.btnNext.TabIndex = 1;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnCharged
             // 
@@ -205,6 +207,7 @@
             this.btnCharged.TabIndex = 0;
             this.btnCharged.Text = "Charged";
             this.btnCharged.UseVisualStyleBackColor = true;
+            this.btnCharged.Click += new System.EventHandler(this.btnCharged_Click);
             // 
             // groupBox3
             // 
@@ -227,7 +230,7 @@
             this.txtTotalRevenue.Name = "txtTotalRevenue";
             this.txtTotalRevenue.ReadOnly = true;
             this.txtTotalRevenue.Size = new System.Drawing.Size(372, 26);
-            this.txtTotalRevenue.TabIndex = 1;
+            this.txtTotalRevenue.TabIndex = 3;
             this.txtTotalRevenue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label8
@@ -246,7 +249,7 @@
             this.txtTotalIsStudent.Name = "txtTotalIsStudent";
             this.txtTotalIsStudent.ReadOnly = true;
             this.txtTotalIsStudent.Size = new System.Drawing.Size(372, 26);
-            this.txtTotalIsStudent.TabIndex = 1;
+            this.txtTotalIsStudent.TabIndex = 2;
             this.txtTotalIsStudent.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label7
@@ -267,6 +270,7 @@
             this.txtTotalCustomer.Size = new System.Drawing.Size(372, 26);
             this.txtTotalCustomer.TabIndex = 1;
             this.txtTotalCustomer.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtTotalCustomer.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.TextTotalCustomer_DoubleClick);
             // 
             // label6
             // 
